@@ -93,6 +93,7 @@ return [
     |
     */
 
+    'faker_run' => env('APP_FAKER_RUN', false),
     'fallback_locale' => 'en',
 
     /*

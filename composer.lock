@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3e33bbb385307af5dd6423561a73bebe",
+    "content-hash": "32547215fac3594cf68875ee33eb9cfc",
     "packages": [
         {
             "name": "arubacao/http-basic-auth-guard",
@@ -1013,6 +1013,76 @@
                 }
             ],
             "time": "2021-10-06T17:43:30+00:00"
+        },
+        {
+            "name": "jalallinux/laravel-settings",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jalallinux/laravel-settings.git",
+                "reference": "60a06ee7b545de54d873757848204dd0060f3604"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jalallinux/laravel-settings/zipball/60a06ee7b545de54d873757848204dd0060f3604",
+                "reference": "60a06ee7b545de54d873757848204dd0060f3604",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.4 || ~1.0",
+                "orchestra/testbench": "3.8.*|4.*|5.*",
+                "phpunit/phpunit": "^8.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JalalLinuX\\Settings\\SettingsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Settings": "JalalLinuX\\Settings\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "JalalLinuX\\Settings\\": "src/"
+                },
+                "classmap": [
+                    "src/migrations"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "JalalLinuX",
+                    "email": "smjjalalzadeh93@gmail.com"
+                }
+            ],
+            "description": "Store key value pair in database as settings",
+            "homepage": "https://github.com/jalallinux/laravel-settings",
+            "keywords": [
+                "database settings",
+                "db settings",
+                "eloquent",
+                "jalallinux",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/jalallinux/laravel-settings/issues",
+                "source": "https://github.com/jalallinux/laravel-settings/tree/1.0.6"
+            },
+            "time": "2022-03-04T13:20:12+00:00"
         },
         {
             "name": "laravel/framework",
