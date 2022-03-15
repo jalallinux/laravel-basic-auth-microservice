@@ -3,12 +3,13 @@
 namespace App\Models;
 
 use App\Models\Traits\WithUuidColumn;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 class Admin extends Authenticatable
 {
-    use Notifiable, WithUuidColumn;
+    use HasFactory, Notifiable, WithUuidColumn;
 
     protected $guarded = ['id', 'uuid'];
     protected $hidden = ['id', 'password'];
