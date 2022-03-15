@@ -3,9 +3,6 @@
 # Laravel basic auth microservice
 by [JalalLinuX](mailto:smjjalalzadeh93@gmail.com) at **[HiDevs Team](https://hidevs.team)**.
 
-## Recommendation Packages
-- #### Repository Pattern : [awes-io/repository](https://github.com/awes-io/repository)
-- #### Persian sluggable : [pishran/laravel-persian-slug](https://github.com/pishran/laravel-persian-slug)
 
 ## Installation Steps
 
@@ -52,6 +49,11 @@ php artisan key:generate
 ```bash
 php artisan migrate  --seed
 ```  
+
+
+## Recommendation Packages
+- #### Repository Pattern : [awes-io/repository](https://github.com/awes-io/repository)
+- #### Persian sluggable : [pishran/laravel-persian-slug](https://github.com/pishran/laravel-persian-slug)
 
 
 <p align="center"><a href="https://hidevs.team">HiDevs Team</a></p>
