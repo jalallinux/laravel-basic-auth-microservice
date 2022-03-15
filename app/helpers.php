@@ -17,9 +17,9 @@ if (!function_exists('responseData')) {
     function responseData($data = [], $status = 200, array $headers = [], $options = 0): JsonResponse
     {
         return response()->json([
+            'data' => $data,
             'code' => ($status == 0 ? 500 : $status),
             'timestamp' => now()->timestamp,
-            'data' => $data,
         ], $status, $headers, $options);
     }
 }
@@ -40,9 +40,9 @@ if (!function_exists('responseMessage')) {
     function responseMessage(string $message, $status = 200, array $headers = [], $options = 0): JsonResponse
     {
         return response()->json([
+            'message' => $message,
             'code' => ($status == 0 ? 500 : $status),
             'timestamp' => now()->timestamp,
-            'message' => $message,
         ], $status, $headers, $options);
     }
 }

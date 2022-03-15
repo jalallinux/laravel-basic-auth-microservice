@@ -36,8 +36,6 @@ return [
     'date' => 'The :attribute is not a valid date.',
     'date_equals' => 'The :attribute must be a date equal to :date.',
     'date_format' => 'The :attribute does not match the format :format.',
-    'declined' => 'The :attribute must be declined.',
-    'declined_if' => 'The :attribute must be declined when :other is :value.',
     'different' => 'The :attribute and :other must be different.',
     'digits' => 'The :attribute must be :digits digits.',
     'digits_between' => 'The :attribute must be between :min and :max digits.',
@@ -45,8 +43,7 @@ return [
     'distinct' => 'The :attribute field has a duplicate value.',
     'email' => 'The :attribute must be a valid email address.',
     'ends_with' => 'The :attribute must end with one of the following: :values.',
-    'enum' => 'The selected :attribute is invalid.',
-    'exists' => 'The selected :attribute is invalid.',
+    'exists' => 'The selected :attribute not found.',
     'file' => 'The :attribute must be a file.',
     'filled' => 'The :attribute field must have a value.',
     'gt' => [
@@ -81,7 +78,6 @@ return [
         'string' => 'The :attribute must be less than or equal to :value characters.',
         'array' => 'The :attribute must not have more than :value items.',
     ],
-    'mac_address' => 'The :attribute must be a valid MAC address.',
     'max' => [
         'numeric' => 'The :attribute must not be greater than :max.',
         'file' => 'The :attribute must not be greater than :max kilobytes.',
@@ -102,19 +98,18 @@ return [
     'numeric' => 'The :attribute must be a number.',
     'password' => 'The password is incorrect.',
     'present' => 'The :attribute field must be present.',
-    'prohibited' => 'The :attribute field is prohibited.',
-    'prohibited_if' => 'The :attribute field is prohibited when :other is :value.',
-    'prohibited_unless' => 'The :attribute field is prohibited unless :other is in :values.',
-    'prohibits' => 'The :attribute field prohibits :other from being present.',
     'regex' => 'The :attribute format is invalid.',
     'required' => 'The :attribute field is required.',
-    'required_array_keys' => 'The :attribute field must contain entries for: :values.',
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_unless' => 'The :attribute field is required unless :other is in :values.',
     'required_with' => 'The :attribute field is required when :values is present.',
     'required_with_all' => 'The :attribute field is required when :values are present.',
     'required_without' => 'The :attribute field is required when :values is not present.',
     'required_without_all' => 'The :attribute field is required when none of :values are present.',
+    'prohibited' => 'The :attribute field is prohibited.',
+    'prohibited_if' => 'The :attribute field is prohibited when :other is :value.',
+    'prohibited_unless' => 'The :attribute field is prohibited unless :other is in :values.',
+    'prohibits' => 'The :attribute field prohibits :other from being present.',
     'same' => 'The :attribute and :other must match.',
     'size' => [
         'numeric' => 'The :attribute must be :size.',
@@ -158,6 +153,73 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'name' => 'name',
+        'family' => 'family',
+        'username' => 'username',
+        'email' => 'email',
+        'first_name' => 'first name',
+        'last_name' => 'last name',
+        'password' => 'password',
+        'password_confirmation' => 'password confirmation',
+        'country' => 'country',
+        'contact' => 'contact',
+        'mobile' => 'mobile',
+        'age' => 'age',
+        'sex' => 'sex',
+        'gender' => 'gender',
+        'day' => 'day',
+        'month' => 'month',
+        'year' => 'year',
+        'hour' => 'hour',
+        'minute' => 'minute',
+        'second' => 'second',
+        'title' => 'title',
+        'text' => 'text',
+        'content' => 'content',
+        'description' => 'description',
+        'excerpt' => 'excerpt',
+        'date' => 'date',
+        'time' => 'time',
+        'available' => 'available',
+        'size' => 'size',
+        'terms' => 'terms',
+        'params' => 'params',
+        'pattern' => 'pattern',
+        'sms' => 'sms',
+        'target' => 'target',
+        'slug' => 'slug',
+        'link' => 'link',
+        'code' => 'code',
+        'type' => 'type',
+        'transaction' => 'transaction',
+        'setting' => 'setting',
+        'group' => 'group',
+        'logo' => 'logo',
+        'tel' => 'tel',
+        'question' => 'question',
+        'reply' => 'reply',
+        'favorite' => 'favorite',
+        'national_code' => 'national code',
+        'attributes' => 'attributes',
+        'validation_code' => 'validation code',
 
+        /**
+         * Pagination
+         */
+        'page' => 'page',
+        'perPage' => 'perPage',
+        'orderBy' => 'orderBy',
+        'orderType' => 'orderType',
+
+        /**
+         * Models
+         */
+
+
+        /**
+         * Attributes
+         */
+
+    ],
 ];

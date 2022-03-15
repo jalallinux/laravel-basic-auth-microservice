@@ -13,9 +13,9 @@ return [
     |
     */
 
-    'failed' => 'These credentials do not match our records.',
-    'password' => 'The provided password is incorrect.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'logout' => 'You are logged out successfully.',
-    'unauthenticated' => 'Unauthenticated'
+    'failed'   => 'مشخصات وارد شده صحیح نمی باشد.',
+    'password' => 'رمز عبور اشتباه است.',
+    'throttle' => 'دفعات تلاش شما برای ورود بیش از حد مجاز است. لطفا پس از :seconds ثانیه مجددا تلاش فرمایید.',
+    'logout' => 'با موفقیت از حساب خود خارج شدید.',
+    'unauthenticated' => 'شما احراز هویت نشده اید.',
 ];

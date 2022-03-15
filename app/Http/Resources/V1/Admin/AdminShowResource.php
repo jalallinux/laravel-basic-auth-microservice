@@ -2,9 +2,9 @@
 
 namespace App\Http\Resources\V1\Admin;
 
-use Illuminate\Http\Resources\Json\JsonResource;
+use App\Http\Resources\V1\BaseResource;
 
-class AdminShowResource extends JsonResource
+class AdminShowResource extends BaseResource
 {
     /**
      * Transform the resource into an array.
