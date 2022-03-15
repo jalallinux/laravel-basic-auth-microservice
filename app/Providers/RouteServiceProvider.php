@@ -26,7 +26,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string|null
      */
-    // protected $namespace = 'App\\Http\\Controllers';
+     protected $namespace = 'App\\Http\\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -50,10 +50,11 @@ class RouteServiceProvider extends ServiceProvider
     {
         collect(glob(base_path('routes/api/v1/*.php')))->each(function ($routeFile) {
             $middleware = $routeFile == base_path('routes/api/v1/guest.php') ? ['api'] : ['api', 'auth.basic:api'];
-            Route::prefix("api/v1")
+            $filename = str_replace('.php', '', last(explode('/', $routeFile)));
+            Route::prefix("api/v1/{$filename}")
                 ->middleware($middleware)
                 ->namespace("{$this->namespace}\V1")
-                ->name("v1.")
+                ->name("api.v1.{$filename}.")
                 ->group($routeFile);
         });
     }
